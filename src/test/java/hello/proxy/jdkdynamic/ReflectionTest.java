@@ -28,7 +28,7 @@ public class ReflectionTest {
 
         Hello target = new Hello();
         //callA 메서드 정보
-        Method methodCallA = classHello.getMethod("callA");//callA의 메서드 정보(메타 정보)
+        Method methodCallA = classHello.getMethod("callA");// callA의 메서드 정보(메타 정보)
         Object result1 = methodCallA.invoke(target);//target(인스턴스)의 methodCallA(메타정보)를 실행해라
         log.info("result1={}", result1);
 
