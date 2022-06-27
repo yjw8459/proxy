@@ -17,7 +17,6 @@ public class BeanPostProcessorTest {
     void basicConfig(){
         //스프링 빈으로 BasicConfig가 스프링 빈으로 등록되고, 등록되면서 BasicConfig가 호출되고 Bean을 생성한다.
         ApplicationContext context = new AnnotationConfigApplicationContext(BeanPostProcessorConfig.class);//스프링 컨테이너
-
         //A는 빈으로 등록된다.
         B b = context.getBean("beanA", B.class);
         b.helloB();
